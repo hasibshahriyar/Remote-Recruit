@@ -34,7 +34,7 @@ export default function FeatureShowcase() {
             <div className="w-3 h-3 rounded-full bg-gradient-to-br from-[#52B4DA] to-[#1E3E85]"></div>
           </div>
           <div className="rounded-[16px] overflow-hidden mb-6">
-             <img src={imgProfile} alt="User Profile UI" className="w-full object-cover" />
+             <img src={imgProfile} alt="User Profile UI" className="w-full object-cover" loading="lazy" />
           </div>
           
           <div className="flex flex-wrap gap-3 mt-8">
@@ -49,13 +49,13 @@ export default function FeatureShowcase() {
 
         {/* Circular Avatar on Right Edge */}
         <div className="absolute top-[30%] -right-10 lg:-right-16 z-20 w-[90px] h-[90px] rounded-full overflow-hidden border-[6px] border-[#1E3E85] shadow-xl">
-          <img src={imgGru} alt="Profile" className="w-full h-full object-cover" />
+          <img src={imgGru} alt="Profile" className="w-full h-full object-cover" loading="lazy" />
         </div>
 
         {/* Client Feedback Pill */}
         <div className="absolute top-[60%] -left-12 lg:-left-20 z-20 bg-white border border-[#F6F4FF] rounded-full p-2 pr-6 shadow-xl flex items-center space-x-4">
           <div className="w-14 h-14 rounded-full overflow-hidden border-4 border-[#F29939]">
-            <img src={imgGru} alt="Client" className="w-full h-full object-cover" />
+            <img src={imgGru} alt="Client" className="w-full h-full object-cover" loading="lazy" />
           </div>
           <div>
             <div className="text-xs font-semibold text-[#1E3E85]">Past Client Feedback</div>

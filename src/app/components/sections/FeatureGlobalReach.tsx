@@ -31,14 +31,14 @@ export default function FeatureGlobalReach() {
             <div className="w-3 h-3 rounded-full bg-gradient-to-br from-[#52B4DA] to-[#1E3E85]"></div>
           </div>
           <div className="rounded-[16px] overflow-hidden">
-             <img src={imgJobBoard} alt="Job Board UI" className="w-full object-cover" />
+             <img src={imgJobBoard} alt="Job Board UI" className="w-full object-cover" loading="lazy" />
           </div>
         </div>
 
         {/* Floating Profile 1 */}
         <div className="absolute top-[60%] -left-12 lg:-left-24 z-20 bg-white border border-[#F6F4FF] rounded-full p-2 pr-6 shadow-xl flex items-center space-x-4 animate-[bounce_6s_infinite]">
           <div className="w-14 h-14 rounded-full overflow-hidden border-2 border-[#19CDB8]">
-            <img src={imgGru} alt="Gru" className="w-full h-full object-cover" />
+            <img src={imgGru} alt="Gru" className="w-full h-full object-cover" loading="lazy" />
           </div>
           <div>
             <div className="text-xs font-semibold text-[#1E3E85]">Python Developer</div>
@@ -49,7 +49,7 @@ export default function FeatureGlobalReach() {
         {/* Floating Profile 2 */}
         <div className="absolute bottom-[-10%] right-[-10%] z-20 bg-white border border-[#F6F4FF] rounded-full p-2 pr-6 shadow-xl flex items-center space-x-4 animate-[bounce_5s_infinite_0.5s]">
           <div className="w-14 h-14 rounded-full overflow-hidden border-2 border-[#19CDB8]">
-            <img src={imgGru} alt="Mel" className="w-full h-full object-cover grayscale" />
+            <img src={imgGru} alt="Mel" className="w-full h-full object-cover grayscale" loading="lazy" />
           </div>
           <div>
             <div className="text-xs font-semibold text-[#52B4DA]">Front End Wizard</div>

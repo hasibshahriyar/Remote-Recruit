@@ -9,6 +9,8 @@ import PricingCards from './components/sections/PricingCards';
 import Footer from './components/sections/Footer';
 
 import FooterBackground from './components/ui/FooterBackground';
+import { FadeIn } from './components/ui/FadeIn';
+import { ScrollToTop } from './components/ui/ScrollToTop';
 
 export default function App() {
   return (
@@ -18,15 +20,25 @@ export default function App() {
       
       {/* Container for main content */}
       <main className="max-w-[1280px] mx-auto px-4 sm:px-6 lg:px-8 py-24 space-y-32">
-        <FeatureGlobalReach />
-        <FeatureFeeFree />
-        <FeatureShowcase />
+        <FadeIn>
+          <FeatureGlobalReach />
+        </FadeIn>
+        <FadeIn direction="left">
+          <FeatureFeeFree />
+        </FadeIn>
+        <FadeIn>
+          <FeatureShowcase />
+        </FadeIn>
       </main>
 
-      <SignUpCTA />
+      <FadeIn direction="none">
+        <SignUpCTA />
+      </FadeIn>
       
       <div className="max-w-[1280px] mx-auto px-4 sm:px-6 lg:px-8 py-24">
-        <FAQ />
+        <FadeIn direction="up">
+          <FAQ />
+        </FadeIn>
       </div>
 
       {/* Bottom section with custom Figma background containing Pricing & Footer */}
@@ -42,13 +54,17 @@ export default function App() {
         </div>
 
         <div className="relative z-10 max-w-[1280px] mx-auto px-4 sm:px-6 lg:px-8 pt-[150px] md:pt-[250px]">
-          <PricingCards />
+          <FadeIn direction="up">
+            <PricingCards />
+          </FadeIn>
         </div>
 
         <div className="relative z-10 pt-20">
           <Footer />
         </div>
       </div>
+      
+      <ScrollToTop />
     </div>
   );
 }

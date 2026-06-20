@@ -31,7 +31,7 @@ export default function SignUpCTA() {
                    <div className="w-3 h-3 rounded-full bg-[#27C93F]"></div>
                  </div>
               </div>
-              <img src={imgJobBoard} alt="App Interface" className="w-full object-cover object-top" />
+              <img src={imgJobBoard} alt="App Interface" className="w-full object-cover object-top" loading="lazy" />
             </div>
           </div>
 
