@@ -36,17 +36,17 @@ export default function SignUpCTA() {
           </div>
 
           {/* Text Content (Right side) */}
-          <div className="flex-1 space-y-6 text-center lg:text-left">
+          <div className="flex-1 space-y-6 text-left">
             <h4 className="text-[#1E3E85] font-bold text-xl tracking-wide mb-2">Are you ready?</h4>
             <h2 className="text-4xl lg:text-[55px] font-bold leading-tight text-[#11142D]">
               Help is only a few clicks away!
             </h2>
-            <p className="text-xl text-[#808191] leading-relaxed max-w-md mx-auto lg:mx-0 mt-4">
+            <p className="text-xl text-[#808191] leading-relaxed max-w-md mt-4">
               Click Below to get set up super quickly and find help now!
             </p>
             
             <div className="pt-8">
-              <button className="flex items-center space-x-4 bg-[#DCE8F8] hover:bg-[#C8DAF2] text-[#1E3E85] font-semibold text-xl py-2 px-2 pr-8 rounded-full transition-colors w-fit mx-auto lg:mx-0">
+              <button className="flex items-center space-x-4 bg-[#DCE8F8] hover:bg-[#C8DAF2] text-[#1E3E85] font-semibold text-xl py-2 px-2 pr-8 rounded-full transition-colors w-fit">
                 <div className="w-12 h-12 rounded-full bg-[#52B4DA] flex items-center justify-center">
                   <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="white" strokeWidth="2.5" strokeLinecap="round" strokeLinejoin="round">
                     <line x1="5" y1="12" x2="19" y2="12"></line>

@@ -1,4 +1,5 @@
 import React from 'react';
+import { Sparkles } from 'lucide-react';
 import Button from '../ui/Button';
 import FeatureCheckItem from '../ui/FeatureCheckItem';
 
@@ -30,7 +31,7 @@ export default function PricingCards() {
             </div>
           </div>
 
-          <button className="w-full rounded-full py-4 text-[#1E3E85] font-bold text-lg border-2 border-[#1E3E85] hover:bg-[#F4F7FF] transition-colors">
+          <button className="w-full rounded-[20px] py-4 text-[#1E3E85] font-bold text-lg border-2 border-[#1E3E85] hover:bg-[#F4F7FF] transition-colors">
             Get Started
           </button>
         </div>
@@ -43,16 +44,7 @@ export default function PricingCards() {
             <div className="w-full md:w-[200px] bg-[#F2F6FE] rounded-2xl flex flex-col items-center justify-center p-6 text-center shrink-0 relative">
               {/* Premium Tag inside panel */}
               <div className="bg-[#C2EEFF] rounded-full px-4 py-1.5 flex items-center space-x-2 mb-4">
-                <svg width="12" height="14" viewBox="0 0 12 14" fill="none" xmlns="http://www.w3.org/2000/svg">
-                  <path d="M6 0C6 0 1 4.5 1 8C1 10.7614 3.23858 13 6 13C8.76142 13 11 10.7614 11 8C11 4.5 6 0 6 0Z" fill="url(#paint0_linear)"/>
-                  <path d="M6 4C6 4 3 7 3 9.5C3 11.1569 4.34315 12.5 6 12.5C7.65685 12.5 9 11.1569 9 9.5C9 7 6 4 6 4Z" fill="white" fillOpacity="0.8"/>
-                  <defs>
-                    <linearGradient id="paint0_linear" x1="6" y1="0" x2="6" y2="13" gradientUnits="userSpaceOnUse">
-                      <stop stopColor="#52B4DA"/>
-                      <stop offset="1" stopColor="#1E3E85"/>
-                    </linearGradient>
-                  </defs>
-                </svg>
+                <Sparkles size={16} className="text-[#1E3E85]" fill="currentColor" />
                 <span className="text-[#11142D] text-sm font-bold">Premium</span>
               </div>
               <h3 className="text-3xl font-bold text-[#52B4DA] mb-2">$79.99</h3>
@@ -68,7 +60,7 @@ export default function PricingCards() {
             </div>
           </div>
 
-          <button className="w-full rounded-3xl py-4 bg-[#1E3E85] text-white font-bold text-lg hover:bg-[#152e66] transition-colors shadow-lg">
+          <button className="w-full rounded-[20px] py-4 bg-[#1E3E85] text-white font-bold text-lg hover:bg-[#152e66] transition-colors shadow-lg">
             Get Started
           </button>
         </div>

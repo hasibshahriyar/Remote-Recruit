@@ -5,9 +5,9 @@ import LogoBadge from '../ui/LogoBadge';
 
 export default function FeatureFeeFree() {
   return (
-    <section className="flex flex-col-reverse lg:flex-row items-center gap-16 lg:gap-24">
+    <section className="flex flex-col lg:flex-row items-center gap-16 lg:gap-24">
       {/* Interactive Visuals (Left side on desktop) */}
-      <div className="flex-1 relative w-full max-w-lg mt-8 lg:mt-0">
+      <div className="flex-1 relative w-full max-w-lg mt-8 lg:mt-0 pb-12 lg:pb-0">
         
         {/* Floating Blue Circle */}
         <div className="absolute -top-8 -left-8 w-6 h-6 rounded-full bg-[#1E3E85] shadow-sm z-0"></div>
