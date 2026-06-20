@@ -2,6 +2,9 @@
 
 This is a responsive web application for the RemoteRecruit - Features page, built as part of the Web Developer Technical Examination. 
 
+**Live Demo:** [https://remote-recruit-beige.vercel.app](https://remote-recruit-beige.vercel.app)  
+**GitHub Repository:** [https://github.com/hasibshahriyar/Remote-Recruit](https://github.com/hasibshahriyar/Remote-Recruit)
+
 It accurately recreates the provided Figma design using modern frontend technologies.
 
 ## Frameworks & Libraries Used
