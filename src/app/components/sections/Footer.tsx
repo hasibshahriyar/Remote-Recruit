@@ -7,7 +7,7 @@ export default function Footer() {
   return (
     <footer className="relative pt-12 pb-8 text-white w-full mt-16 overflow-hidden">
       
-      <div className="max-w-[1280px] mx-auto relative z-10">
+      <div className="max-w-[1280px] mx-auto relative z-10 px-4 sm:px-6 lg:px-8">
         
         {/* Main Footer Row */}
         <div className="flex flex-col md:flex-row justify-between items-center mb-16 gap-8">

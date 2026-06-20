@@ -17,13 +17,13 @@ export default function PricingCards() {
           
           <div className="flex flex-col md:flex-row gap-8 items-stretch">
             {/* Left Panel */}
-            <div className="w-full md:w-[180px] bg-[#F2F6FE] rounded-2xl flex flex-col items-center justify-center p-6 text-center shrink-0">
+            <div className="w-full md:w-[180px] flex flex-col items-center justify-center p-6 text-center shrink-0 border-b md:border-b-0 md:border-r border-[#F0F0F0]">
               <h3 className="text-4xl font-bold text-[#52B4DA] mb-2">Free</h3>
               <p className="text-[#808191] font-medium text-lg">Basic</p>
             </div>
 
             {/* Right Panel */}
-            <div className="flex-1 w-full space-y-1 py-2">
+            <div className="flex-1 w-full space-y-1 py-4 md:pl-4">
               <FeatureCheckItem label="1 Active Job" active />
               <FeatureCheckItem label="Basic List Placement" active />
               <FeatureCheckItem label="Unlimited Job Applicants" active={false} />
@@ -41,7 +41,7 @@ export default function PricingCards() {
           
           <div className="flex flex-col md:flex-row gap-8 items-stretch">
             {/* Left Panel */}
-            <div className="w-full md:w-[200px] bg-[#F2F6FE] rounded-2xl flex flex-col items-center justify-center p-6 text-center shrink-0 relative">
+            <div className="w-full md:w-[200px] flex flex-col items-center justify-center p-6 text-center shrink-0 relative border-b md:border-b-0 md:border-r border-[#F0F0F0]">
               {/* Premium Tag inside panel */}
               <div className="bg-[#C2EEFF] rounded-full px-4 py-1.5 flex items-center space-x-2 mb-4">
                 <Sparkles size={16} className="text-[#1E3E85]" fill="currentColor" />
@@ -52,7 +52,7 @@ export default function PricingCards() {
             </div>
 
             {/* Right Panel */}
-            <div className="flex-1 w-full space-y-1 py-2">
+            <div className="flex-1 w-full space-y-1 py-4 md:pl-4">
               <FeatureCheckItem label="Unlimited Job Posts" active />
               <FeatureCheckItem label="Instant Job Post Approval" active />
               <FeatureCheckItem label="Premium List Placement" active />
