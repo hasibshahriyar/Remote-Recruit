@@ -8,14 +8,38 @@
   --color-gray: #6D6E7A;
   --color-gray-light: #808191;
   --color-tag: #C2EEFF;
-  
-  --font-sans: "Poppins", sans-serif;
+
+  --font-sans: "Poppins", ui-sans-serif, system-ui, sans-serif;
+
+  --shadow-card: 14px 41px 100px rgba(49, 89, 211, 0.12);
+  --shadow-card-strong: 14px 41px 100px rgba(49, 89, 211, 0.18);
 }
 
 @layer base {
+  html {
+    scroll-behavior: smooth;
+  }
+
   body {
     font-family: var(--font-sans);
     color: var(--color-dark);
     background-color: #ffffff;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+  }
+
+  img {
+    max-width: 100%;
+    height: auto;
+  }
+}
+
+@layer utilities {
+  .shadow-card {
+    box-shadow: var(--shadow-card);
+  }
+
+  .shadow-card-strong {
+    box-shadow: var(--shadow-card-strong);
   }
 }
